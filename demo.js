@@ -5,7 +5,7 @@ defineClass('ViewController', {
    
             setInitView: function() {
             
-            self.ORIGsetInitView();   //保留原先的代码;
+            self.ORIGsetInitView();   //保留原先的代码; 若想直接替换可以注释掉.
 
             
             var JSView = UIView.alloc().initWithFrame({x: 0, y: 300, width: 400, height: 200});
@@ -17,7 +17,7 @@ defineClass('ViewController', {
             JSView.addSubview(labelOne);
             
             var labelTwo = UILabel.alloc().initWithFrame({x: 0, y: 50, width: 300, height: 100})
-            labelTwo.setText("这又是个JSPatc的绿色背景label.");
+            labelTwo.setText("这又是个JSPatch的绿色背景label.");
             labelTwo.setTextColor(UIColor.redColor());
             labelTwo.setBackgroundColor(UIColor.greenColor())
             labelTwo.setTextAlignment(0);
